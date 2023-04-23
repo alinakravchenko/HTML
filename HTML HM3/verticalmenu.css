@@ -1,0 +1,31 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: block;
+    background: whitesmoke;
+}
+menu{
+    background: gray;
+    display: table;
+    color: white;
+    margin-left: 50px;
+    padding: 0px;
+    border-radius: 40px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.subMenu{
+    padding: 30px 45px;
+    font-size: 30px;
+}
+.subMenu:hover{
+    background: #615f5f;
+    cursor: pointer;
+}
+#edit{
+    
+    border-radius: 40px 40px 0px 0px;
+}
+#settings{
+    border-radius: 0px 0px 40px 40px;
+}
