@@ -1,0 +1,93 @@
+body,html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#leftside{
+    position: absolute;
+    left: 0;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: #8a8a8a;
+    padding: 1%;
+    height: 100%;
+    overflow: hidden;
+    transition: 1s linear;
+}
+#leftside:hover {
+    position: absolute;
+    left: 0;
+    width: 220px;
+}
+#leftside ul
+{
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+#leftside p
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.icon
+{
+    display: flex;
+    width: 75px;
+    height: 75px;
+}
+.edit{
+    background: url(img2/edit.png) center/cover no-repeat ;
+    
+}
+.favorites{
+    background: url(img2/favorites.png) center/cover no-repeat;;
+}
+.history{
+    background: url(img2/history.png) center/cover no-repeat;;
+}
+.security{
+    background: url(img2/security.png) center/cover no-repeat;;
+}
+.settings{
+    background: url(img2/settings.png) center/cover no-repeat;;
+}
+#rightside
+{
+    width: 95%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 3%;
+    margin-left: 5%;
+}
+#leftside li.menu-item {
+    display: flex;
+    width: 220px;
+}
+#leftside li.menu-item:hover {
+    background: #707070;
+    cursor: pointer;
+}
