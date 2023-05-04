@@ -1,0 +1,219 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: whitesmoke;
+    box-sizing: border-box;
+    padding: 15px 2.5%;
+    border-bottom: 3px solid #b4b4b4;
+}
+.header-icon {
+    width:50px;
+    height:50px;
+}
+.header-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.header-text {
+    font-family: Roboto;
+    font-weight: 500;
+}
+.left {
+    text-transform: uppercase;
+    font-size: calc(8px + 1vw);
+    margin-left: 15px;
+}
+.right {
+    font-size: calc(8px + 0.57vw);
+    margin-right: 15px;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.leftside {
+    width: 20%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 2vw 3vw;
+}
+.list-wrapper {
+    display: flex;
+    width: 100%;
+}
+.list-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.list-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.list-item:hover {
+    background: #f4e3e4;
+    cursor: pointer;
+}
+.list-item-image {
+    width: 40px;
+    margin-right: 15px;
+}
+.list-item-text {
+    color: black;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: calc(8px + 0.53vw);
+    width: 80%;
+}
+.rightside {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.content-area {
+    display: none;
+}
+.area-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 3% 5px 0;
+}
+.favorites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+}
+.favorites span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img3/star1.svg);
+    width:100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+.favorites span.active {
+    background: url(img3/star2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+.title {
+    width: 15%;
+    display: flex;
+    flex-direction: row;    
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: calc(8px + 0.47vw);
+}
+.context {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.subject {
+    font-size: calc(8px + 0.47vw);
+}
+.subject span {
+    color: grey;
+    font-weight: 400;
+    font-size: calc(8px + 0.38vw);
+}
+.attachment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+}
+.attachment span {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width:100%;
+    height: 100%;
+}
+.attachment span.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img3/attach_26.png);
+    width:100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35% 50%;
+}
+.date {
+    width: 8%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.date p {
+    width: 100%;
+    text-align: right;
+    font-family: Roboto;
+    font-size:calc(8px + 0.43vw);
+    font-weight:400;
+}
+.area1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+a:hover + .rightside .area1
+{
+    display: none;
+}
+
+@media screen and (max-width:800px) and (min-width:550px) {
+    .leftside {
+        width:25%;
+    }
+    .rightside {
+        width: 75%;        
+    }
+    .list-item-text {
+        font-size: calc(12px + 0.53vw);
+    }
+}
