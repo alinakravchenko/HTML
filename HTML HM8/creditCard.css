@@ -1,0 +1,98 @@
+.body, html{
+    background: whitesmoke;
+}
+.wrapper{
+    width: 80%;
+    margin: 3em auto;
+    padding-top: 1em;
+    background: #9fcdcd;
+    height: 85vh;
+    border-radius: 15px;
+    box-shadow:  rgba(0, 0, 0, 0.3) 0px 0px 8px;
+}
+
+.main-header-container{
+    max-width: 65%;
+}
+
+.main-header{
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 0.8em 3em;
+    margin-left: -1em;
+    margin-top: 1.2em;
+    background: #db6423;
+}
+
+.container-forms-img{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form{
+    width: 50%;
+    margin: 2em 3em;
+}
+.form-card-validity{
+    display: flex;
+}
+
+.card-number,
+.card-name,
+.card-month,
+.card-year,
+.card-cvv{
+    border-style:  none none solid none;
+    height: 3em;
+}
+
+.card-number,
+.card-name,
+.form-card-validity{
+    width: 100%;
+}
+
+.card-validity{
+    width: 25%;
+}
+
+.card-month,
+.card-year,
+.card-cvv{
+    max-width: 100%;
+}
+
+.card-item{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+.form-card-validity{
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+input{
+    font-size: 1.5em;
+    font-family: sans-serif;
+    padding-left: 1em;
+    background: #a9d2d2;
+}
+
+
+.images img{
+    height: 34.5vw;
+    width: 100%;
+    border-radius: 0 0 20px 0;
+}
+
+.hidden{
+    visibility: hidden;
+}

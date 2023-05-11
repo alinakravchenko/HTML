@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Library</title>
+    <link rel="stylesheet" href="minilibrary.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h3>Inputs</h3>
+        <input type="text" id="someText" name="userSomeText" value="Enter Some Text" disabled/>
+        <input type="text" id="validText" name="uservalidText" value="Valid Text" pattern="valid text" required minlength="1"/>
+        <input type="text" id="inValidText" name="userInValidText" value="Invalid Text" pattern="valid text" required minlength="1"/>
+        <h3>Check boxes</h3>
+        <div class="container">
+           <div class="column"><input type="checkbox"/></div>
+           <div class="column">Subscribe</div>
+           <div class="column"><input type="checkbox" checked/></div>
+           <div class="column">Subscribe</div>      
+        </div>
+        <h3>Radio buttons</h3>
+        <div class="container">
+           <div class="column">Gender</div> 
+           <div class="column"><input type="radio" value="male" id="gender1" name="sex" checked/></div>
+           <div class="column">Male</div>
+           <div class="column"><input type="radio" value="female" id="gender2" name="sex"/></div>
+           <div class="column">Female</div>
+        </div>
+        <h3>Buttons</h3>
+        <div class="container">
+            <button class="greenBackColor">Active</button>
+            <button class="greenBackColorHover" name="greenBackColorHover">Hover</button>
+            <button class="redBackColor">Danger</button>
+            <button class="redBackColorHover" name="redBackColorHover">Hover</button>
+            <button class="disabled" disabled>Disabled</button>
+            <input class="plus" type="image" src="img5/valid.png">
+            <input class="minus" type="image" src="img5/invalid.png">   
+        </div>
+        <h3 style="font-family: Roboto;" class="textAREA">Test area</h3>
+        <textarea name="userSomeText" placeholder="Enter some text...."></textarea>
+    </main>
+</body>
+</html>
